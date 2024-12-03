@@ -24,9 +24,6 @@
     <Compile Include="dataPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="imagePackage\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="locationPackage\decryptLocation.py">
       <SubType>Code</SubType>
     </Compile>
@@ -46,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dataPackage\" />
-    <Folder Include="imagePackage\" />
     <Folder Include="locationPackage\" />
     <Folder Include="mainPackage\" />
     <Folder Include="moviePackage\" />
