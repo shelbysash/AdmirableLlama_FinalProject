@@ -14,18 +14,14 @@
 
 
 from cryptography.fernet import Fernet
+class movieDecryption():
+   
+    def __init__(self, encrypted_message, key):
+        self.encrypted_message = encrypted_message
+        self.key = key
+        self.cipher_suite = Fernet(self.key)
 
-# The encrypted message
-encrypted_message = "gAAAAABnJ6xXV_rlZKvUaNEhrKkzKkY7qqeTUeQnUou1Hy9XjHm94eDw4Kg116N_GC19i0Dwc4sFFKud2P81nQQGXKFx9S7NTHRdJOe5eWRdAb09tzURzNs="
-
-# The key
-key = "4pM87rNgte1kHWCMfiJ79eil9JbpCYBvBqRJXec9v-A="
-
-# Create a Fernet object with the provided key
-cipher_suite = Fernet(key)
-
-# Decrypt the message
-decrypted_message = cipher_suite.decrypt(encrypted_message.encode()).decode()
-
-print(f"Decrypted movie: {decrypted_message}")
+    def decrypt(self):
+        # Decrypt and return message
+        return self.cipher_suite.decrypt(self.encrypted_message.encode()).decode()
 
