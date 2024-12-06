@@ -11,3 +11,17 @@
 
 #use 'teams and encrypted' json file
 #install cryptography.fernet
+
+
+from cryptography.fernet import Fernet
+class movieDecryption():
+   
+    def __init__(self, encrypted_message, key):
+        self.encrypted_message = encrypted_message
+        self.key = key
+        self.cipher_suite = Fernet(self.key)
+
+    def decrypt(self):
+        # Decrypt and return message
+        return self.cipher_suite.decrypt(self.encrypted_message.encode()).decode()
+
