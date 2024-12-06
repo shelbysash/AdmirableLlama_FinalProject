@@ -19,19 +19,23 @@ def main():
     json_file = 'dataPackage/EncryptedGroupHints Fall 2024 Section 001.json'  # Path to your encrypted JSON file
     english_file = 'dataPackage/UCEnglish.txt'  # Path to your UCEnglish.txt file
    
-        # Instantiate the FindLocation class
+    # Instantiate the FindLocation class
     location_finder = findLocation(json_file, english_file)
    
     projectTeam = "AdmirableLlama"
-        # Decrypt the location
+    # Decrypt the location
     location = location_finder.decrypt_location(projectTeam)
    
-        # Print the decrypted location
+    # Print the decrypted location
     print(f'Decrypted Location: {location}')
    
-        #DECRYPTING MOVIE QUOTE
+    #DECRYPTING MOVIE QUOTE
     movie_json_file = 'dataPackage/TeamsAndEncryptedMessagesForDistribution.json'
-   
+    #instantiate movieDecryption class
+    movie_decryption = movieDecryption(movie_json_file)
+    projectTeamName = "AdmirableLlama"
+    #decrypt movie name 
+    movieTitle = 
    
 
 if __name__ == "__main__":

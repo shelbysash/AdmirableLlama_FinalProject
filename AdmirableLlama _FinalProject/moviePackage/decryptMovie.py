@@ -12,6 +12,3 @@
 #use 'teams and encrypted' json file
 #install cryptography.fernet
 
-
-    
-
