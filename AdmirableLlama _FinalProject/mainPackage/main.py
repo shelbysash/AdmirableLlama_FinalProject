@@ -6,7 +6,7 @@
 # Semester/Year: Fall 2024
 # Brief Description of the assignment: 
 # Brief Description of what this module does: 
-# Citations: 
+# Citations: stack overflow, geeks for geeks
 # Anything else that's relevant:
 
 from locationPackage.decryptLocation import *
@@ -27,16 +27,7 @@ def main():
     location = location_finder.decrypt_location(projectTeam)
    
     # Print the decrypted location
-    print(f'Decrypted Location: {location}')
-   
-    #DECRYPTING MOVIE QUOTE
-    movie_json_file = 'dataPackage/TeamsAndEncryptedMessagesForDistribution.json'
-    #instantiate movieDecryption class
-    movie_decryption = movieDecryption(movie_json_file)
-    projectTeamName = "AdmirableLlama"
-    #decrypt movie name 
-    movieTitle = 
-   
+    print(f'Decrypted Location: {location}') 
 
 if __name__ == "__main__":
     main()
