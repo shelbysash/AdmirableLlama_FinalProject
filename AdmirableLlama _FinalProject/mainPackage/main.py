@@ -32,7 +32,16 @@ def main():
         #DECRYPTING MOVIE QUOTE
     movie_json_file = 'dataPackage/TeamsAndEncryptedMessagesForDistribution.json'
    
+    #MOVIE DECRYPTION
+    # Encrypted message and key
+    encrypted_message = "gAAAAABnJ6xXV_rlZKvUaNEhrKkzKkY7qqeTUeQnUou1Hy9XjHm94eDw4Kg116N_GC19i0Dwc4sFFKud2P81nQQGXKFx9S7NTHRdJOe5eWRdAb09tzURzNs="
+    key = "4pM87rNgte1kHWCMfiJ79eil9JbpCYBvBqRJXec9v-A="
+
+    # Instantiate MovieDecryption
+    decryption = movieDecryption(encrypted_message, key)
    
+    # Decrypt and print the message
+    print(f"Decrypted Movie: {decryption.decrypt()}")
 
 if __name__ == "__main__":
     main()
