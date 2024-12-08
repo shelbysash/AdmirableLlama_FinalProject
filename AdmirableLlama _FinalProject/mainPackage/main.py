@@ -12,6 +12,7 @@
 from locationPackage.decryptLocation import *
 from dataPackage import *
 from moviePackage.decryptMovie import *
+from PIL import Image, ImageFile
 
 def main():
     #DECRYPTING LOCATION
@@ -45,3 +46,17 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#IMAGE
+#to fix error about truncated images
+ImageFile.LOAD_TRUNCATED_IMAGES = True
+
+image_path = "dataPackage/AdmirableLlama_image.jpeg"
+
+#displaying the image & rotating it
+img = Image.open(image_path)
+img = img.rotate(180, expand=True)
+img.show()
+
+
+
