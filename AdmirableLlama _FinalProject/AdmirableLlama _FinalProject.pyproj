@@ -48,6 +48,7 @@
     <Folder Include="moviePackage\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dataPackage\AdmirableLlama_image.jpeg" />
     <Content Include="dataPackage\EncryptedGroupHints Fall 2024 Section 001.json" />
     <Content Include="dataPackage\TeamsAndEncryptedMessagesForDistribution.json" />
     <Content Include="dataPackage\UCEnglish.txt" />

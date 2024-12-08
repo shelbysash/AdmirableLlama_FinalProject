@@ -13,6 +13,9 @@ from locationPackage.decryptLocation import *
 from dataPackage import *
 from moviePackage.decryptMovie import *
 
+
+
+
 def main():
     #DECRYPTING LOCATION
     # File paths for the JSON and English text files
@@ -29,9 +32,6 @@ def main():
         # Print the decrypted location
     print(f'Decrypted Location: {location}')
    
-        #DECRYPTING MOVIE QUOTE
-    movie_json_file = 'dataPackage/TeamsAndEncryptedMessagesForDistribution.json'
-   
     #MOVIE DECRYPTION
     # Encrypted message and key
     encrypted_message = "gAAAAABnJ6xXV_rlZKvUaNEhrKkzKkY7qqeTUeQnUou1Hy9XjHm94eDw4Kg116N_GC19i0Dwc4sFFKud2P81nQQGXKFx9S7NTHRdJOe5eWRdAb09tzURzNs="
@@ -42,6 +42,10 @@ def main():
    
     # Decrypt and print the message
     print(f"Decrypted Movie: {decryption.decrypt()}")
+    
+    
+
 
 if __name__ == "__main__":
     main()
+    

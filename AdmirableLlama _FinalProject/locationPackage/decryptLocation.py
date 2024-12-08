@@ -15,12 +15,27 @@ from dataPackage import *
 #location py
 
 class findLocation(): 
+    """
+    Decrypts a string to return a given location
+    """
 
     def __init__(self, json_file, english_file):
+        """
+        Initializes instance of findLocation class 
+        @param self: the instance of the class
+        @param json_file: 
+        @param english_file: 
+        """
         self.json_file = json_file
         self.english_file = english_file
 
     def searchTeam(self, teamName):
+        """
+        Searches for team 'AsmirableLlama' to find designated encrypted message
+        @param self: the instance of the class
+        @param teamName: 
+        @return: 
+        """
         # Load the encrypted data from the JSON file
         with open(self.json_file, 'r') as f:
             encrypted_data = json.load(f)
@@ -32,6 +47,12 @@ class findLocation():
             print("error finding team name, AdmirableLlama")
     
     def decrypt_location(self, teamName):
+        """
+        Decrypts the message using the UCEnglish text file
+        @param self: the instance of the class
+        @param teamName: 
+        @return: 
+        """
         # Search for the team in the encrypted data
         encrypted_location = self.searchTeam(teamName)
         
