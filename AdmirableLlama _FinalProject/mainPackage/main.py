@@ -31,11 +31,16 @@ def main():
     print(f'Decrypted Location: {location}')
    
     #MOVIE DECRYPTION
-    # Encrypted message and key
-    encrypted_message = "gAAAAABnJ6xXV_rlZKvUaNEhrKkzKkY7qqeTUeQnUou1Hy9XjHm94eDw4Kg116N_GC19i0Dwc4sFFKud2P81nQQGXKFx9S7NTHRdJOe5eWRdAb09tzURzNs="
+# Load the JSON data from the file
+    with open('dataPackage/TeamsAndEncryptedMessagesForDistribution.json', 'r') as file:
+        data = json.load(file)
+   
     key = "4pM87rNgte1kHWCMfiJ79eil9JbpCYBvBqRJXec9v-A="
+   
+    # The encrypted message for AdmirableLlama
+    encrypted_message = data["AdmirableLlama"][0]
 
-    # Instantiate movieDecryption class
+    # Instantiate MovieDecryption
     decryption = movieDecryption(encrypted_message, key)
    
     # Decrypt and print the message
