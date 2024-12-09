@@ -30,18 +30,10 @@ def main():
         # Print the decrypted location
     print(f'Decrypted Location: {location}')
    
-    #MOVIE DECRYPTION
-    # Encrypted message and key
-    encrypted_message = "gAAAAABnJ6xXV_rlZKvUaNEhrKkzKkY7qqeTUeQnUou1Hy9XjHm94eDw4Kg116N_GC19i0Dwc4sFFKud2P81nQQGXKFx9S7NTHRdJOe5eWRdAb09tzURzNs="
-    key = "4pM87rNgte1kHWCMfiJ79eil9JbpCYBvBqRJXec9v-A="
-
-    # Instantiate movieDecryption class
-    decryption = movieDecryption(encrypted_message, key)
-   
-    # Decrypt and print the message
-    print(f"Decrypted Movie: {decryption.decrypt()}")
+#MOVIE DECRYPTION
+     
     
-    #IMAGE
+#IMAGE
     #to fix error about truncated images
     ImageFile.LOAD_TRUNCATED_IMAGES = True
 

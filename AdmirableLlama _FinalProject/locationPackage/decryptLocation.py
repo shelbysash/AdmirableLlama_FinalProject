@@ -32,7 +32,7 @@ class findLocation():
 
     def searchTeam(self, teamName):
         """
-        Searches for team 'AsmirableLlama' to find designated encrypted message
+        Searches for team 'AdmirableLlama' to find designated encrypted message
         @param self: the instance of the class
         @param teamName: Our team's name to search for
         @return: The encrypted string or None if team not found
