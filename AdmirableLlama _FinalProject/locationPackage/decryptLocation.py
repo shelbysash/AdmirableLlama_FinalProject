@@ -4,7 +4,7 @@
 # Due Date: 12/10/2024
 # Course #/Section: IS4010-001
 # Semester/Year: Fall 2024
-# Brief Description of the assignment: Collaborate using Github to Decrypt two specified strings
+# Brief Description of the assignment: Collaborate using Github to decrypt two specified strings
 # Brief Description of what this module does: Decrypts the string in the 'EncryptedGroup...ect' text file using the UCEnglish file
 # Citations: stack overflow, geeks for geeks, reddit, Python.org
 # Anything else that's relevant: N/A

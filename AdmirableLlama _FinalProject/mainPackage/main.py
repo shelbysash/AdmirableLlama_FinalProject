@@ -31,7 +31,7 @@ def main():
     print(f'Decrypted Location: {location}')
    
     #MOVIE DECRYPTION
-# Load the JSON data from the file
+    # Load the JSON data from the file
     with open('dataPackage/TeamsAndEncryptedMessagesForDistribution.json', 'r') as file:
         data = json.load(file)
    
@@ -46,7 +46,7 @@ def main():
     # Decrypt and print the message
     print(f"Decrypted Movie: {decryption.decrypt()}")
     
-#IMAGE
+    #IMAGE
     #to fix error about truncated images
     ImageFile.LOAD_TRUNCATED_IMAGES = True
 
